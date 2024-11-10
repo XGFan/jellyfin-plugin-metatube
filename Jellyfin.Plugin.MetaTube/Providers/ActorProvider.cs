@@ -89,10 +89,10 @@ public class ActorProvider : BaseProvider, IRemoteMetadataProvider<Person, Perso
         {
             var result = new RemoteSearchResult
             {
-                Name = m.Name,
+                Name = $"[{m.Provider}] {m.Name}",
                 SearchProviderName = Name,
                 ImageUrl = m.Images?.Any() == true
-                    ? ApiClient.GetPrimaryImageApiUrl(m.Provider, m.Id, m.Images[0], 0.5, true)
+                    ? ApiClient.GetPrimaryImageApiUrl(m.Provider, m.Id, m.Images.First(), 0.5, true)
                     : string.Empty
             };
             result.SetPid(Name, m.Provider, m.Id);
@@ -110,12 +110,11 @@ public class ActorProvider : BaseProvider, IRemoteMetadataProvider<Person, Perso
         var info = new List<(string, string)>
         {
             ("別名", string.Join(", ", aliases ?? Enumerable.Empty<string>())),
-            ("身長", a.Height > 0 ? a.Height.ToString() : string.Empty),
-            ("趣味", a.Hobby),
-            ("特技", a.Skill),
-            ("血液型", a.BloodType),
+            ("3サイズ", a.Measurements),
             ("カップサイズ", a.CupSize),
-            ("スリーサイズ", a.Measurements)
+            ("身長", a.Height > 0 ? $"{a.Height}cm" : string.Empty),
+            ("血液型", !string.IsNullOrWhiteSpace(a.BloodType) ? $"{a.BloodType}型" : string.Empty),
+            ("デビュー", a.DebutDate.GetValidDateTime()?.ToString("yyyy年M月d日"))
         };
 
         return string.Join("\n<br>\n",
