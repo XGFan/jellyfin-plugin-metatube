@@ -1,5 +1,6 @@
 using System.Text;
 using System.Text.RegularExpressions;
+using System.ComponentModel;
 using Jellyfin.Plugin.MetaTube.Configuration;
 using Jellyfin.Plugin.MetaTube.Extensions;
 using Jellyfin.Plugin.MetaTube.Helpers;
@@ -55,7 +56,19 @@ public class MovieProvider : BaseProvider, IRemoteMetadataProvider<Movie, MovieI
             var firstResult = (await GetSearchResults(info, cancellationToken)).FirstOrDefault();
             if (firstResult != null) pid = firstResult.GetPid(Plugin.ProviderId);
         }
-
+        var filePath = "";
+        foreach(PropertyDescriptor descriptor in TypeDescriptor.GetProperties(info))
+        {
+            string name = descriptor.Name;
+            object value = descriptor.GetValue(info);
+            Logger.Info("movie info {0}={1}", name, value);
+            if (name.Equals("Path"))
+            {
+                filePath = value.ToString();
+            }
+        }
+        Logger.Info("movie info Name: {0}", info.Name);
+        Logger.Info("movie info Path: {0}", GetFileNameWithoutExtension(filePath));
         Logger.Info("Get movie info: {0}", pid.ToString());
 
         var m = await ApiClient.GetMovieInfoAsync(pid.Provider, pid.Id, cancellationToken);
@@ -92,6 +105,7 @@ public class MovieProvider : BaseProvider, IRemoteMetadataProvider<Movie, MovieI
         // Build parameters.
         var parameters = new Dictionary<string, string>
         {
+            { @"{file_name}", GetFileNameWithoutExtension(filePath) },
             { @"{provider}", m.Provider },
             { @"{id}", m.Id },
             { @"{number}", m.Number },
@@ -375,5 +389,36 @@ public class MovieProvider : BaseProvider, IRemoteMetadataProvider<Movie, MovieI
                 (sb, kvp) => sb.Replace(kvp.Key, kvp.Value));
 
         return sb.ToString().Trim();
+    }
+
+    public static String GetFileName(String path)
+    {
+        if (path != null)
+        {
+            int length = path.Length;
+            for (int i = length; --i >= 0;)
+            {
+                char ch = path[i];
+                if (ch == '\\' || ch == '/' || ch == ':')
+                    return path.Substring(i + 1, length - i - 1);
+
+            }
+        }
+        return path;
+    }
+
+
+    public static String GetFileNameWithoutExtension(String path)
+    {
+        path = GetFileName(path);
+        if (path != null)
+        {
+            int i;
+            if ((i=path.LastIndexOf('.')) == -1)
+                return path; // No path extension found
+            else
+                return path.Substring(0,i);
+        }
+        return null;
     }
 }
