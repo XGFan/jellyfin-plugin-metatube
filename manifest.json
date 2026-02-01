@@ -1,0 +1,157 @@
+[
+  {
+    "guid": "01cc53ec-c415-4108-bbd4-a684a9801a32",
+    "name": "MetaTube",
+    "description": "Metadata Tube Plugin for Jellyfin/Emby.",
+    "overview": "Metadata Tube Plugin for Jellyfin/Emby.",
+    "owner": "MetaTube",
+    "category": "Metadata",
+    "imageUrl": "https://raw.githubusercontent.com/metatube-community/jellyfin-plugin-metatube/main/Jellyfin.Plugin.MetaTube/thumb.png",
+    "versions": [
+      {
+        "checksum": "6271a48cd8544c8f4f65905e9186f1dd",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/XGFan/jellyfin-plugin-metatube/releases/download/v2026.201.847.0/Jellyfin.MetaTube@v2026.201.847.0.zip",
+        "timestamp": "2026-02-01T08:47:21Z",
+        "version": "2026.201.847.0"
+      },
+      {
+        "checksum": "a8370de492c33f85772d30e62cf02739",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/XGFan/jellyfin-plugin-metatube/releases/download/v2025.1030.938.0/Jellyfin.MetaTube@v2025.1030.938.0.zip",
+        "timestamp": "2025-10-30T09:39:04Z",
+        "version": "2025.1030.938.0"
+      },
+      {
+        "checksum": "d9027500553c9156fbda66a004a0b1f9",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/XGFan/jellyfin-plugin-metatube/releases/download/v2025.403.347.0/Jellyfin.MetaTube@v2025.403.347.0.zip",
+        "timestamp": "2025-04-03T03:47:57Z",
+        "version": "2025.403.347.0"
+      },
+      {
+        "checksum": "aaf7fe075aae09ec2e61222a1f7ac038",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/XGFan/jellyfin-plugin-metatube/releases/download/v2024.1110.521.0/Jellyfin.MetaTube@v2024.1110.521.0.zip",
+        "timestamp": "2024-11-10T05:22:05Z",
+        "version": "2024.1110.521.0"
+      },
+      {
+        "checksum": "862f0066b414f062ec1f0306de81e6b6",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/XGFan/jellyfin-plugin-metatube/releases/download/v2024.528.1515.0/Jellyfin.MetaTube@v2024.528.1515.0.zip",
+        "timestamp": "2024-05-28T15:15:26Z",
+        "version": "2024.528.1515.0"
+      },
+      {
+        "checksum": "25b0edfd3d302a788604157aa8f2afb6",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/XGFan/jellyfin-plugin-metatube/releases/download/v2023.1013.1234.0/Jellyfin.MetaTube@v2023.1013.1234.0.zip",
+        "timestamp": "2023-10-13T12:34:41Z",
+        "version": "2023.1013.1234.0"
+      },
+      {
+        "checksum": "2e184c145752776511ead76ef96cea17",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/XGFan/jellyfin-plugin-metatube/releases/download/v2023.406.1719.0/Jellyfin.MetaTube@v2023.406.1719.0.zip",
+        "timestamp": "2023-04-06T17:20:05Z",
+        "version": "2023.406.1719.0"
+      },
+      {
+        "checksum": "a4585965287bc4e1127e7356d5d44e73",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/XGFan/jellyfin-plugin-metatube/releases/download/v2023.130.1852.0/Jellyfin.MetaTube@v2023.130.1852.0.zip",
+        "timestamp": "2023-01-30T18:53:20Z",
+        "version": "2023.130.1852.0"
+      },
+      {
+        "checksum": "84c78b8ff51f5475aa4f31899d0891c7",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/XGFan/jellyfin-plugin-metatube/releases/download/v2023.130.1835.0/Jellyfin.MetaTube@v2023.130.1835.0.zip",
+        "timestamp": "2023-01-30T18:35:37Z",
+        "version": "2023.130.1835.0"
+      },
+      {
+        "checksum": "249c881d3ca0cc2a1dfa933264a5a64d",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/XGFan/jellyfin-plugin-metatube/releases/download/v2023.130.1832.0/Jellyfin.MetaTube@v2023.130.1832.0.zip",
+        "timestamp": "2023-01-30T18:32:43Z",
+        "version": "2023.130.1832.0"
+      },
+      {
+        "checksum": "a77cc0e2988ab93fede60ca768e672e2",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/XGFan/jellyfin-plugin-metatube/releases/download/v2023.130.1826.0/Jellyfin.MetaTube@v2023.130.1826.0.zip",
+        "timestamp": "2023-01-30T18:27:00Z",
+        "version": "2023.130.1826.0"
+      },
+      {
+        "checksum": "85dae521479ea19c61265413414e70e5",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/XGFan/jellyfin-plugin-metatube/releases/download/v2023.130.1752.0/Jellyfin.MetaTube@v2023.130.1752.0.zip",
+        "timestamp": "2023-01-30T17:52:46Z",
+        "version": "2023.130.1752.0"
+      },
+      {
+        "checksum": "6d29d8699262ee0fddb2891538f99893",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/XGFan/jellyfin-plugin-metatube/releases/download/v2023.130.1739.0/Jellyfin.MetaTube@v2023.130.1739.0.zip",
+        "timestamp": "2023-01-30T17:40:11Z",
+        "version": "2023.130.1739.0"
+      },
+      {
+        "checksum": "14d351a0b1a2a55366455b6495b57a14",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/metatube-community/jellyfin-plugin-metatube/releases/download/v2023.130.1731.0/Jellyfin.MetaTube@v2023.130.1731.0.zip",
+        "timestamp": "2023-01-30T17:32:09Z",
+        "version": "2023.130.1731.0"
+      },
+      {
+        "checksum": "030098add200fe4eb55a9eacfc1dea16",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/metatube-community/jellyfin-plugin-metatube/releases/download/v2022.1218.1400.0/Jellyfin.MetaTube@v2022.1218.1400.0.zip",
+        "timestamp": "2022-12-18T14:00:36Z",
+        "version": "2022.1218.1400.0"
+      },
+      {
+        "checksum": "051dd2fe76e154a3b99690d2391fe360",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/metatube-community/jellyfin-plugin-metatube/releases/download/v2022.1216.1830.0/Jellyfin.MetaTube@v2022.1216.1830.0.zip",
+        "timestamp": "2022-12-16T18:30:47Z",
+        "version": "2022.1216.1830.0"
+      },
+      {
+        "checksum": "8779d91b2ce7fc320e7c6251db20c36f",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/metatube-community/jellyfin-plugin-metatube/releases/download/v2022.1216.1130.0/Jellyfin.MetaTube@v2022.1216.1130.0.zip",
+        "timestamp": "2022-12-16T11:30:30Z",
+        "version": "2022.1216.1130.0"
+      },
+      {
+        "checksum": "c4001e352038c51fcb31d528be2a45cb",
+        "changelog": "Auto Released by Actions",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/metatube-community/jellyfin-plugin-metatube/releases/download/v2022.1130.1150.0/Jellyfin.JavTube@v2022.1130.1150.0.zip",
+        "timestamp": "2022-11-30T11:50:33Z",
+        "version": "2022.1130.1150.0"
+      }
+    ]
+  }
+]
